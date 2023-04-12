@@ -61,6 +61,7 @@ class Station:
         if (fuel):               
             return float(fuel["Preco"]
                 .replace(" €/litro", "")
+                .replace(" â‚¬/kg", "")                         
                 .replace(",", "."))
         else:
             return 0
